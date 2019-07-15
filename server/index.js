@@ -7,8 +7,8 @@ const apikey = 'f16739a';
 
 //localhost:5000/getmovie?title=MovieTitle
 app.get('/getmovie', (req, res) => {
-  // const title = req.query.title;
-  const title = 'rambo';
+  const title = req.query.title;
+ 
 
   const querystr = `http://www.omdbapi.com/?t=${title}&apikey=${apikey}`;
 
